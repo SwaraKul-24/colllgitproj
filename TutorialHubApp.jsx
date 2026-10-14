@@ -193,7 +193,7 @@ function Hero() {
   return (
     <section style={{ background: "#f8f9fa", padding: "60px 20px", textAlign: "center" }}>
       <div className="container">
-        <h1 style={{ fontSize: "3rem", fontWeight: "bold" }}>Welcome to TutorialHub</h1>
+        <h1 style={{ fontSize: "3rem", fontWeight: "bold" }}>Welcome to Student Learning Hub</h1>
         <p style={{ fontSize: "1.2rem", color: "#555" }}>
           Learn coding, design, and more with step-by-step tutorials.
         </p>
@@ -438,7 +438,7 @@ function Tutorials({ tutorials, loading, error, retry, courseFilter, clearCourse
         )}
 
         {!loading && !error && visible.length === 0 && (
-          <p className="text-center text-muted py-4">No tutorials available yet.</p>
+          <p className="text-center">No tutorials available yet.</p>
         )}
 
         <div className="row g-4">
