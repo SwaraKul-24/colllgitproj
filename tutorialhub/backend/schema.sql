@@ -40,3 +40,13 @@ CREATE TABLE contact_messages (
     message TEXT NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+CREATE TABLE tutorial_progress (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id VARCHAR(100) NOT NULL,
+    tutorial_id INT NOT NULL,
+    completed BOOLEAN NOT NULL DEFAULT FALSE,
+    completed_at TIMESTAMP NULL DEFAULT NULL,
+    UNIQUE KEY unique_user_tutorial (user_id, tutorial_id),
+    FOREIGN KEY (tutorial_id) REFERENCES tutorials(id)
+        ON DELETE CASCADE
+);
