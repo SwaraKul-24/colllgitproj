@@ -50,3 +50,20 @@ INSERT INTO community_stats
 (members_count, tutorials_count, courses_count)
 VALUES
 (1250, 4, 4);
+-- Insert 5 sample tutorials
+INSERT INTO tutorials (title, description, category, content, course_id)
+VALUES
+('HTML Basics', 'Introduction to HTML', 'Web Development',
+ 'Learn HTML tags and structure.', 1),
+
+('CSS Basics', 'Introduction to CSS', 'Web Development',
+ 'Learn styling, colors and layouts.', 1),
+
+('JavaScript Basics', 'Introduction to JavaScript', 'Programming',
+ 'Learn variables and functions.', 1),
+
+('Node.js Basics', 'Introduction to Node.js', 'Backend Development',
+ 'Learn server-side JavaScript.', 1),
+
+('Express.js Basics', 'Introduction to Express.js', 'Backend Development',
+ 'Learn how to build APIs.', 1);
