@@ -2,17 +2,6 @@ CREATE DATABASE IF NOT EXISTS tutorialhub_db;
 
 USE tutorialhub_db;
 
-CREATE TABLE courses (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    title VARCHAR(150) NOT NULL,
-    category VARCHAR(100) NOT NULL,
-    description TEXT,
-    instructor VARCHAR(100),
-    difficulty ENUM('Beginner', 'Intermediate', 'Advanced')
-        DEFAULT 'Beginner',
-    duration_hours INT DEFAULT 1,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
 
 CREATE TABLE tutorials (
     id INT AUTO_INCREMENT PRIMARY KEY,
